@@ -1,0 +1,685 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f0f0f;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(Imagenes/IMG1.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: #040404;
+    border-bottom: 1px solid #ffffff29;
+}
+
+.logo {
+    color: #a70a15;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #ffffff;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #e1160d;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    display: none;
+    cursor: pointer;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 70vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+.header-content-container {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.header-info h1 {
+    font-size: 70px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: #e1160d;
+}
+
+.header-info span {
+    color: #ffffff;
+}
+
+.header-info p {
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+}
+
+
+.btn-1 {
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 10px;
+    background-color: #e1160d;
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.btn-1:hover {
+    background-color: #a70a15;
+}
+
+.Tumbador {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+}
+
+.Tumbador-1 {
+    width: 50%;
+    padding-right: 150px;
+}
+
+.Tumbador-1 h2 {
+    font-size: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.Tumbador-1 p {
+    font-size: 16px;
+    color: #818181;
+    margin-bottom: 35px;
+}
+
+.Tumbador-1 span {
+    color: #e1160d;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 8px 45px;
+    border-radius: 20px;
+    background-color: #e1160d;
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.btn-2:hover {
+    background-color: #a70a15;
+}
+
+.img-1, .img-2 {
+    width: 400px;
+    margin-right: 0px;
+}
+
+.footer {
+    border-top: 1px solid #ffffff29;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #040404;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-info {
+    color: #ffffff;
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer h3 {
+    color: #a70a15;
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.footer .direccion,
+.footer .contacto,
+.footer .celular {
+    font-size: 16px;
+    color: #818181;
+    margin-bottom: 8px;
+}
+
+.links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.links ul li {
+    list-style: none;
+}
+
+.links ul li a {
+    color: #818181;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.links ul li a:hover {
+    color: #e1160d;
+    transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .links ul {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media(max-width: 991px) {
+   
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #303030;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header-info h1 {
+        font-size: 50px;
+        margin-bottom: 5px;
+    }
+
+    .Tumbador {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .img-1 {
+        width: 100%;
+        padding: 0;
+        order: 1;
+    }
+
+    .btn-2 {
+        margin-bottom: 35px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        margin-bottom: 15%;
+    }
+
+    .links ul li {
+        margin: 0 10px;
+    }
+
+    .menu-icono {
+        width: 30px;
+    }
+}
+
+/* Contenedor principal */
+.caracteristicas-container {
+    background-color: #303030;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.caracteristicas-titulo {
+    font-size: 40px;
+    font-weight: 700;
+    color: #e1160d;
+    margin-bottom: 40px;
+}
+
+/* Contenedor de las tarjetas */
+.caracteristicas-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Cada tarjeta de ingrediente */
+.ingrediente-1 {
+    width: 270px;
+    height: 380px;
+    background-color: #ffffff;
+    border: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover de la tarjeta */
+.ingrediente-1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilo de las imágenes */
+.ingrediente-1 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+/* Título siempre visible */
+.ingrediente-1 h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #222;
+    margin: 10px 0;
+}
+
+/* Texto descriptivo siempre visible */
+.ingrediente-1 p {
+    font-size: 16px;
+    color: #555;
+    padding: 0 10px;
+}
+/* Cada tarjeta de ingrediente */
+.ingrediente-1 {
+    width: 270px;
+    height: 420px; /* Aumenté el alto */
+    background-color: #ffffff;
+    border: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Texto descriptivo */
+.ingrediente-1 p {
+    font-size: 14px; /* Un poco más pequeño */
+    color: #555;
+    padding: 0 10px;
+}
+
+
+
+
+.modo-uso, .precauciones {
+    background-color: #303030;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.modo-uso h2, .precauciones h2 {
+    font-size: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.modo-uso h2 span, .precauciones h2 span {
+    color: #e1160d;
+}
+
+.modo-uso p {
+    font-size: 18px;
+    color: #818181;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.precauciones ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.precauciones ul li {
+    font-size: 18px;
+    color: #818181;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 25px;
+    text-align: left;
+}
+
+.precauciones ul li::before {
+    content: "⚠️";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+.presentacion-producto {
+    padding: 100px 20px;
+    background-color: #303030;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease;
+  }
+  
+  .presentacion-producto.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .producto-imagen img {
+    width: 300px;
+    margin-right: 40px;
+    transition: opacity 0.6s ease;
+  }
+  
+  .producto-info {
+    max-width: 600px;
+  }
+  
+  .producto-info h2 {
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .producto-info h2 span {
+    color: #e1160d;
+  }
+  
+  .producto-info p {
+    font-size: 18px;
+    color: #818181;
+    line-height: 1.6;
+  }
+
+  
+
+  /* Contenedor principal de la sección */
+.caracteristicas-container {
+    padding: 60px 0;
+    background-color: #1c1c1c;
+    color: #fff;
+    text-align: center;
+}
+
+.caracteristicas-titulo {
+    font-size: 36px;
+    font-weight: 700;
+    color: #e1160d;
+    margin-bottom: 40px;
+}
+
+/* Contenedor de las tarjetas */
+.caracteristicas-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+/* Estilo de cada tarjeta */
+.caracteristica-card {
+    width: 250px;
+    height: 350px;
+    background-color: #2d2d2d;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    padding: 20px;
+}
+
+/* Efecto hover de las tarjetas */
+.caracteristica-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #e1160d;
+}
+
+/* Estilo de los iconos */
+.caracteristica-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto de animación en los iconos */
+.caracteristica-card:hover .caracteristica-icon {
+    transform: rotate(20deg);
+}
+
+/* Estilo del título y párrafo */
+.caracteristica-card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.caracteristica-card p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+
+/* Estilos para la sección de comentarios */
+.comentarios-section {
+    background-color: #303030;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.comentarios-titulo {
+    font-size: 36px;
+    color: #e1160d;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el formulario de comentario */
+.comentarios-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+    height: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #e1160d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a70a15;
+}
+
+/* Estilos para los comentarios */
+.comentarios-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.comentario {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comentario-texto {
+    max-width: 75%;
+    font-size: 16px;
+    color: #333;
+}
+
+.comentario-votacion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comentario-votacion button {
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid #e1160d;
+    color: #e1160d;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.comentario-votacion button:hover {
+    background-color: #e1160d;
+    color: white;
+}
+
+.comentario-votacion button:active {
+    background-color: #a70a15;
+}
